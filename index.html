@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touhaf Aya - Portfolio</title>
+    <meta name="description" content="Portfolio de Touhaf Aya, développeuse logicielle en recherche de stage Agile. Découvrez mes compétences, projets et expériences professionnelles.">
+    <meta name="author" content="Touhaf Aya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<!-- Lien d'accès rapide pour l'accessibilité -->
+<a href="#main" class="skip-link">Passer au contenu</a>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">TA</a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour changer de thème avec ARIA -->
+            <button class="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+            <!-- Bouton hamburger amélioré pour l’accessibilité -->
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Contenu principal -->
+<main id="main">
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="hero-profile reveal">
+                <img src="img/img.jpeg" alt="Photo de profil de Touhaf Aya" loading="lazy">
+            </div>
+            <div class="hero-text reveal">
+                <h1>Touhaf Aya</h1>
+                <p>Futur Chef de Projet Informatique – À la recherche d'un stage et d'une alternance pour l'année prochaine</p>
+                <div class="contacts">
+                    <a href="mailto:touhafaya@gmail.com" class="btn">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                    <a href="https://github.com/touhaf00" target="_blank" rel="noopener noreferrer" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section À propos -->
+    <section id="about">
+        <div class="section-title">
+            <h2>À propos de moi</h2>
+        </div>
+        <div class="container">
+            <p class="about-text">
+                Étudiante en <strong>Licence 3 Informatique</strong> à l'ULCO, je mets en pratique mes compétences en développement logiciel et web à travers des projets concrets. Passionnée par les méthodologies Agile et l’optimisation des algorithmes, mon projet professionnel est de devenir chef de projet informatique. Pour l’année prochaine, je recherche à la fois un stage et une alternance afin d'approfondir mes connaissances techniques tout en développant mes compétences en gestion de projet.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="bg-light">
+        <div class="section-title">
+            <h2>Compétences techniques</h2>
+        </div>
+        <div class="skills-container container">
+            <article class="skill-card reveal">
+                <h3><i class="fas fa-code"></i> Développement &amp; Frameworks</h3>
+                <ul>
+                    <li>Java / C++ / Python</li>
+                    <li>PHP / JavaScript</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>VHDL / Haskell</li>
+                    <li>LibGDX / JavaFX / Three.js</li>
+                </ul>
+            </article>
+            <article class="skill-card reveal">
+                <h3><i class="fas fa-database"></i> Bases de données</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>Modélisation UML</li>
+                    <li>Optimisation SQL</li>
+                </ul>
+            </article>
+            <article class="skill-card reveal">
+                <h3><i class="fas fa-network-wired"></i> Administration Système &amp; Réseaux</h3>
+                <ul>
+                    <li>Gestion des serveurs</li>
+                    <li>Administration systèmes</li>
+                    <li>Réseaux et sécurité</li>
+                </ul>
+            </article>
+            <article class="skill-card reveal">
+                <h3><i class="fas fa-tools"></i> Outils &amp; Environnements</h3>
+                <ul>
+                    <li>Docker</li>
+                    <li>GitHub / GitLab</li>
+                    <li>Windows / Linux (Ubuntu, Debian, NixOS) / macOS</li>
+                    <li>Visual Studio Code &amp; Suite JetBrains</li>
+                    <li>Vivado</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projets récents</h2>
+        </div>
+        <div class="projects-grid container">
+            <article class="project-card reveal" data-tech="java">
+                <div class="project-content">
+                    <span class="project-tag">Java</span>
+                    <h3>Souls Game</h3>
+                    <p>Jeu vidéo avec gestion d'attributs et développement orienté objet</p>
+                    <a href="https://github.com/touhaf00/SoulsGame" target="_blank" rel="noopener noreferrer" class="btn">
+                        Voir le projet <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card reveal" data-tech="python">
+                <div class="project-content">
+                    <span class="project-tag">Python</span>
+                    <h3>Mini Mario (en cours)</h3>
+                    <p>Création de niveaux dynamiques avec gestion des collisions</p>
+                    <a href="https://github.com/touhaf00/Mario" target="_blank" rel="noopener noreferrer" class="btn">
+                        Voir le projet <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card reveal" data-tech="java">
+                <div class="project-content">
+                    <span class="project-tag">Java</span>
+                    <h3>Aqua Escape</h3>
+                    <p>Boucle de jeu robuste avec gestion de collisions</p>
+                    <a href="https://github.com/touhaf00/L2_LOO_Projet_2" target="_blank" rel="noopener noreferrer" class="btn">
+                        Voir le projet <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card reveal" data-tech="php js">
+                <div class="project-content">
+                    <span class="project-tag">Full-Stack</span>
+                    <h3>MyMovies</h3>
+                    <p>Application web CRUD avec système d'authentification</p>
+                    <a href="https://github.com/touhaf00/L2_Web_Projet_3" target="_blank" rel="noopener noreferrer" class="btn">
+                        Voir le projet <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section Expériences -->
+    <section id="experience" class="bg-light">
+        <div class="section-title">
+            <h2>Expériences Professionnelles</h2>
+        </div>
+        <div class="container timeline">
+            <article class="timeline-item reveal">
+                <div class="timeline-date">2021-2023</div>
+                <div class="timeline-content">
+                    <h3>Préparatrice de commandes</h3>
+                    <p>Les MS - Angers, FR</p>
+                </div>
+            </article>
+            <article class="timeline-item reveal">
+                <div class="timeline-date">08.2022</div>
+                <div class="timeline-content">
+                    <h3>Plonge et aide cuisine</h3>
+                    <p>Le Bon Pasteur - Angers, FR</p>
+                </div>
+            </article>
+            <article class="timeline-item reveal">
+                <div class="timeline-date">2022-2023</div>
+                <div class="timeline-content">
+                    <h3>Hôtesse de caisse niveau II</h3>
+                    <p>E.Leclerc - Angers, FR</p>
+                </div>
+            </article>
+            <article class="timeline-item reveal">
+                <div class="timeline-date">2024-2025</div>
+                <div class="timeline-content">
+                    <h3>Équipière polyvalente</h3>
+                    <p>Domino's Pizza - Calais, FR</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="container contact-content">
+            <div class="contact-info reveal">
+                <p><i class="fas fa-map-marker-alt"></i> Calais, France</p>
+                <p><i class="fas fa-envelope"></i> touhafaya@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 06 82 94 94 49</p>
+                <div class="social-links">
+                    <a href="https://github.com/touhaf00" target="_blank" rel="noopener noreferrer" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Pied de page -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Touhaf Aya. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
